@@ -1,0 +1,30 @@
+{
+    "name": "astroui",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "npm run prettier && npm run eslint && astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "eslint": "eslint --ext .ts,.tsx,.astro src",
+        "prettier": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss"
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.5.4",
+        "@astrojs/tailwind": "^5.1.0",
+        "astro": "^4.4.0",
+        "autoprefixer": "^10.4.17",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5.3.3"
+    },
+    "devDependencies": {
+        "@typescript-eslint/parser": "^7.0.2",
+        "eslint": "^8.56.0",
+        "eslint-plugin-astro": "^0.31.4",
+        "prettier": "^3.2.5",
+        "prettier-plugin-astro": "^0.13.0",
+        "prettier-plugin-tailwindcss": "^0.5.11"
+    }
+}
