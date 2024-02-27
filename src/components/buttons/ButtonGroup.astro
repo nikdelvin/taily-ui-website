@@ -4,19 +4,18 @@ interface Props {
     type?: 'solid' | 'bordered'
     size?: 'small' | 'medium' | 'large'
     shadow?: boolean
-    icon?: boolean
+    items?: string[]
 }
 
-const { color = 'default', type = 'solid', size = 'medium', shadow = false, icon = false } = Astro.props
+const { color = 'default', type = 'solid', size = 'medium', shadow = false, items = [] } = Astro.props
 ---
 
-<button
+<div
     data-color={color}
     data-type={type}
     data-size={size}
     data-shadow={shadow}
-    data-icon={icon}
-    class="button"
+    class="group button-group"
 >
-    <slot />
-</button>
+    {items.map((item) => <button class="button-group-item">{item}</button>)}
+</div>
