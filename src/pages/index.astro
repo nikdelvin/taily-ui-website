@@ -7,7 +7,7 @@ import Github from '../icons/github.astro'
 <Layout title="Welcome to Taily UI">
     <main class="select-none overflow-hidden">
         <div class="flex h-screen w-screen flex-col overflow-y-scroll">
-            <div class="h-full bg-zinc-950 text-zinc-50">
+            <div class="bg-gradient-to-tr from-fuchsia-500/25 via-zinc-950 to-cyan-500/25 text-zinc-50">
                 <div class="flex h-full w-full flex-col items-center justify-start gap-4 p-16">
                     <div class="grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
                         <div class="flex w-full flex-col">
@@ -52,6 +52,41 @@ import Github from '../icons/github.astro'
                                     <span class="font-medium">GitHub</span>
                                 </a>
                             </div>
+                        </div>
+                        <div class="mx-8 my-16 grid grid-flow-row grid-cols-2 gap-4">
+                            <div
+                                class="flex h-full w-full rotate-[-10deg] scale-100 flex-col items-center justify-center rounded-3xl bg-gradient-to-r from-fuchsia-500 via-blue-500 to-cyan-500 py-4"
+                            >
+                                <img
+                                    alt="Main 1"
+                                    src="/main-1.png"
+                                    width={640}
+                                    height={360}
+                                />
+                            </div>
+                            <div class="flex h-full flex-col items-center justify-center"></div>
+                            <div class="flex h-full flex-col items-center justify-center"></div>
+                            <div
+                                class="flex h-full w-full rotate-[10deg] scale-90 flex-col items-center justify-center rounded-3xl bg-gradient-to-r from-fuchsia-500 via-blue-500 to-cyan-500 py-4 blur-sm"
+                            >
+                                <img
+                                    alt="Main 2"
+                                    src="/main-2.png"
+                                    width={640}
+                                    height={360}
+                                />
+                            </div>
+                            <div
+                                class="flex h-full w-full rotate-[-10deg] scale-[0.8] flex-col items-center justify-center rounded-3xl bg-gradient-to-r from-fuchsia-500 via-blue-500 to-cyan-500 py-4 blur-md"
+                            >
+                                <img
+                                    alt="Main 3"
+                                    src="/main-3.png"
+                                    width={640}
+                                    height={360}
+                                />
+                            </div>
+                            <div class="flex h-full flex-col items-center justify-center"></div>
                         </div>
                     </div>
                 </div>
