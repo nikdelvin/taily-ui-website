@@ -1,13 +1,10 @@
 {
-    "name": "astroui",
+    "name": "taily-ui-website",
     "type": "module",
     "version": "0.0.1",
     "scripts": {
-        "dev": "npm run prettier && npm run eslint && astro dev",
-        "start": "astro dev",
-        "build": "astro check && astro build",
-        "preview": "astro preview",
-        "astro": "astro",
+        "start": "npm run prettier && npm run eslint && astro dev",
+        "build": "npm run prettier && npm run eslint && astro check && astro build",
         "eslint": "eslint --ext .ts,.tsx,.astro src",
         "prettier": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss"
     },
