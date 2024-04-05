@@ -30,5 +30,22 @@ import tailyUI from 'taily-ui'
                 github: 'https://github.com/nikdelvin/taily-ui'
             })}
         />
+        <fragment
+            id="kpi"
+            set:html={tailyUI.KPICards({
+                title: 'Build UI everywhere',
+                color: 'secondary',
+                cards: [
+                    { title: 'Pure', description1: 'Tailwind CSS', description2: 'components' },
+                    { title: 'Easy', description1: 'to use site', description2: 'layouts' },
+                    { title: 'Fast', description1: 'optimized', description2: 'builds' },
+                    { title: 'Free', description1: 'open source', description2: 'license' }
+                ],
+                button: {
+                    title: 'Make new landing',
+                    link: '/'
+                }
+            })}
+        />
     </main>
 </Layout>
