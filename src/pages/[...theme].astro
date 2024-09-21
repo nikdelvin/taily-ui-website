@@ -1,18 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import tailyUI from 'taily-ui'
+
+export async function getStaticPaths() {
+    return [undefined, 'default', 'primary', 'secondary', 'success', 'warning', 'error', 'ghost'].map((theme) => ({
+        params: { theme }
+    }))
+}
+const { theme } = Astro.params
+const colorTheme =
+    (theme as 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost') ?? 'secondary'
 ---
 
 <Layout
     title="Welcome to Taily UI"
     description="Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS."
+    color={colorTheme}
 >
     <main class="select-none overflow-hidden">
         <fragment
             set:html={tailyUI.OpenSourcePromo({
                 logo: 'M17.6953 7.2433c-2.1016-2.5224-4.6763-3.0481-7.7242-1.5771 2.0494-.1049 3.4417.6047 4.1772 2.1285.4199.8695.3263 1.8182.2225 2.87C14.2026 12.3767 14.0072 14.3572 15.9604 16.7015c2.1016 2.5224 4.6763 3.0481 7.7242 1.5771-2.0494.1049-3.4417-.6047-4.1772-2.1285-.4199-.8695-.3263-1.8182-.2225-2.87C19.4535 11.5688 19.6491 9.5884 17.6953 7.2433zM8.0793 7.2424c-2.1016-2.5224-4.6763-3.0481-7.7242-1.5771 2.0494-.1049 3.4417.6047 4.1772 2.1285.4199.8695.3263 1.8182.2225 2.87-.1682 1.7119-.3637 3.6924 1.5894 6.0368 2.1016 2.5224 4.6763 3.0481 7.7242 1.5771-2.0494.1049-3.4417-.6047-4.1772-2.1285-.4199-.8695-.3263-1.8182-.2225-2.87C9.8376 11.5679 10.0332 9.5874 8.0793 7.2424z',
                 title: 'Taily UI',
-                color: 'secondary',
+                color: colorTheme,
                 text: [
                     { type: 'default', value: 'Build' },
                     { type: 'primary', value: 'beautiful' },
@@ -34,7 +44,7 @@ import tailyUI from 'taily-ui'
             id="kpi"
             set:html={tailyUI.KPICards({
                 title: 'Build UI everywhere',
-                color: 'secondary',
+                color: colorTheme,
                 cards: [
                     { title: 'Pure', description1: 'Tailwind CSS', description2: 'components' },
                     { title: 'Easy', description1: 'to use site', description2: 'layouts' },
@@ -44,6 +54,30 @@ import tailyUI from 'taily-ui'
                 button: {
                     title: 'Make new landing',
                     link: '/'
+                }
+            })}
+        />
+        <fragment
+            id="features"
+            set:html={tailyUI.FeatureCards({
+                title: 'Ready-to-use components',
+                color: colorTheme,
+                reverse: false,
+                featureTitle: 'New classes',
+                featureDescription: [
+                    { type: 'default', value: 'To make more' },
+                    { type: 'primary', value: 'simple' },
+                    { type: 'default', value: 'to design a new' },
+                    { type: 'primary', value: 'web apps' }
+                ],
+                featureOptions: [
+                    "Contains 15 pure Tailwind CSS components & 8 easy-to-use prepared layouts for landing pages",
+                    "Cross-framework library created for universal implementation on React, Next.JS, Astro.JS, Svelte, Vue.JS, Nuxt.JS, and vanilla Javascript",
+                    "Output HTML/CSS compression for faster and optimized builds & free open-source MIT license"
+                ],
+                button: {
+                    title: 'Learn more',
+                    link: '#features_2'
                 }
             })}
         />
