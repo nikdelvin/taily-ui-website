@@ -34,7 +34,7 @@ const colorTheme =
 
 <Layout
     title="Welcome to Taily UI"
-    description="Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS."
+    description="Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS"
     color={colorTheme}
 >
     <main class="select-none overflow-hidden">
@@ -48,11 +48,11 @@ const colorTheme =
                     { type: 'primary', value: 'beautiful' },
                     {
                         type: 'default',
-                        value: 'websites with compact, easy to use a fully animated components on top of'
+                        value: 'websites with compact, easy to use fully animated components on top of'
                     },
                     { type: 'secondary', value: 'Tailwind CSS' }
                 ],
-                description: 'Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.',
+                description: 'Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS',
                 button: {
                     title: 'Read docs',
                     link: '/docs/components/buttons'
@@ -73,7 +73,7 @@ const colorTheme =
                 ],
                 button: {
                     title: 'Make new landing',
-                    link: '/'
+                    link: '#features'
                 }
             })}
         />
@@ -91,9 +91,34 @@ const colorTheme =
                     { type: 'primary', value: 'web apps' }
                 ],
                 featureOptions: [
-                    'Contains 15 pure Tailwind CSS components & 8 easy-to-use prepared layouts for landing pages',
+                    'Contains 45 pure Tailwind CSS components for multi-purpose use on your website or dashboard',
                     'Cross-framework library created for universal implementation on React, Next.JS, Astro.JS, Svelte, Vue.JS, Nuxt.JS, and vanilla Javascript',
-                    'Output HTML/CSS compression for faster and optimized builds & free open-source MIT license'
+                    'Output HTML/CSS compression for optimized builds & performance boost for complex design systems'
+                ],
+                button: {
+                    title: 'Learn more',
+                    link: '#features_2'
+                }
+            })}
+        />
+        <fragment
+            id="features_2"
+            set:html={tailyUI.FeatureCards({
+                title: 'Pre-designed layouts',
+                color: colorTheme,
+                reverse: true,
+                featureTitle: 'Build easily',
+                featureDescription: [
+                    { type: 'default', value: 'Like if' },
+                    { type: 'secondary', value: 'UI' },
+                    { type: 'default', value: 'constructed with' },
+                    { type: 'secondary', value: 'Lego' },
+                    { type: 'default', value: 'bricks' }
+                ],
+                featureOptions: [
+                    'Contains 25 easy-to-use prepared layouts for creative landing pages, websites, and dashboards',
+                    'Functional approach in generating HTML & CSS for layouts to make them work on every framework and able to integrate with CMS and other site builders',
+                    'Lifetime use free open-source MIT license to make your commercial ideas shine as fast as possible'
                 ],
                 button: {
                     title: 'Learn more',
@@ -134,7 +159,11 @@ const colorTheme =
                             { type: 'primary', value: 'websites' },
                             { type: 'default', value: 'faster' }
                         ],
-                        role: ['More details', 'Will be here', 'Soon']
+                        role: [
+                            'Hero, call-to-action, feedback form, image gallery, testimonials, blog/news, pricing table, social media & map integration sections',
+                            'Layouts are easily configurable with 7 pre-designed color themes, content-rich sections with markdown support, and media links',
+                            'The functional approach in layout rendering allows you to use it in any JavaScript framework right after connecting Tailwind CSS'
+                        ]
                     },
                     {
                         from: getDate(new Date(Date.now() + (6 * 30 + 2) * 24 * 60 * 60 * 1000)),
@@ -145,7 +174,11 @@ const colorTheme =
                             { type: 'primary', value: 'components' },
                             { type: 'default', value: 'for a dashboard' }
                         ],
-                        role: ['More details', 'Will be here', 'Soon']
+                        role: [
+                            'Alerts, avatars, badges, cards, charts, forms, inputs, tabs, tables, toasts, tooltips, pagination, popovers, modals, loaders', 
+                            '', 
+                            'Soon'
+                        ]
                     },
                     {
                         from: getDate(new Date(Date.now() + (9 * 30 + 3) * 24 * 60 * 60 * 1000)),
@@ -157,7 +190,11 @@ const colorTheme =
                             { type: 'default', value: 'of a' },
                             { type: 'primary', value: 'dashboard' }
                         ],
-                        role: ['More details', 'Will be here', 'Soon']
+                        role: [
+                            'More details', 
+                            'Will be here', 
+                            'Soon'
+                        ]
                     }
                 ]
             })}
