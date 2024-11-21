@@ -2,6 +2,6 @@ import { defineConfig } from 'astro/config'
 import tailwind from '@astrojs/tailwind'
 
 export default defineConfig({
-    site: 'https://tailyui.nikdelvin.com',
+    site: 'https://tailyui.by.nikdelv.in',
     integrations: [tailwind()]
 })
