@@ -1,12 +1,12 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
-import ButtonGroup from '../../../components/buttons/ButtonGroup.astro'
+import Card from '../../../components/Card.astro'
 import { Code } from 'astro:components'
 import Taily from '../../../icons/taily.astro'
 ---
 
 <Layout
-    title="Taily UI - Button Group Component"
+    title="Taily UI - Card Component"
     description="Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS."
     keywords="web de, website, logo design, graphic design, website design, website builder, website templates, web development, graphic designer, web page, brochure design, web designer, webdesign, web developer, ecommerce website, create a website, logo designer, free website templates, web design company, website creator, design logo, website designer, responsive web design, create website, criar site"
     url="https://tailyui.by.nikdelv.in/"
@@ -42,28 +42,25 @@ import Taily from '../../../icons/taily.astro'
                             </div>
                             <div class="mb-4 flex flex-row items-center gap-2">
                                 <div class="mx-2 my-auto flex h-[4px] w-[4px] rounded-full bg-zinc-500"></div>
-                                <h3 class="text-zinc-50">Button Groups</h3>
+                                <a
+                                    class="text-zinc-500"
+                                    href="/docs/components/button-groups"
+                                    >Button Groups</a
+                                >
                             </div>
                             <div class="mb-4 flex flex-row items-center gap-2">
                                 <div class="mx-2 my-auto flex h-[4px] w-[4px] rounded-full bg-zinc-500"></div>
-                                <a
-                                    class="text-zinc-500"
-                                    href="/docs/components/cards"
-                                    >Cards</a
-                                >
+                                <h3 class="text-zinc-50">Cards</h3>
                             </div>
                         </div>
                         <div class="flex h-full w-full flex-col overflow-y-scroll">
                             <div
                                 class="flex h-auto flex-col rounded-xl border-[1px] border-solid border-zinc-500/10 bg-zinc-900 p-6 antialiased outline-none"
                             >
-                                <h1 class="text-4xl font-bold">Button Groups</h1>
+                                <h1 class="text-4xl font-bold">Cards</h1>
                             </div>
                             <div class="flex flex-col px-6">
-                                <p class="mt-8 text-lg">
-                                    Button Groups allow users to perform actions and choose one of multiple options with
-                                    a single tap.
-                                </p>
+                                <p class="mt-8 text-lg">Cards allow users to structure content across the website.</p>
                                 <hr
                                     class="my-8 h-[1px] w-full shrink-0 border-none bg-zinc-500/50"
                                     role="separator"
@@ -77,7 +74,7 @@ import Taily from '../../../icons/taily.astro'
                                     >
                                         Preview
                                     </h1>
-                                    <ButtonGroup items={['Action 1', 'Action 2', 'Action 3']} />
+                                    <Card addClass="!w-[160px] !min-w-[160px] !h-[90px] !min-h-[90px]">Card</Card>
                                 </div>
                                 <div
                                     class="flex h-auto flex-col rounded-xl border-[1px] border-solid border-zinc-500/10 bg-zinc-900 p-4 antialiased outline-none"
@@ -89,11 +86,7 @@ import Taily from '../../../icons/taily.astro'
                                     </h1>
                                     <div class="overflow-hidden rounded-xl bg-[#1E1E1E] p-4">
                                         <Code
-                                            code={`<div data-color="default" data-type="solid" data-size="medium" class="group button-group">
-    <button class="button-group-item">Action 1</button>
-    <button class="button-group-item">Action 2</button>
-    <button class="button-group-item">Action 3</button>
-</div>`}
+                                            code={`<div data-color="default" class="card">Card</div>`}
                                             lang="js"
                                             theme="dark-plus"
                                         />
