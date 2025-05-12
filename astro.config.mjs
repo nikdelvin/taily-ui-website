@@ -3,5 +3,8 @@ import tailwind from '@astrojs/tailwind'
 
 export default defineConfig({
     site: 'https://tailyui.by.nikdelv.in',
-    integrations: [tailwind()]
+    integrations: [tailwind()],
+    devToolbar: {
+        enabled: false
+    }
 })
