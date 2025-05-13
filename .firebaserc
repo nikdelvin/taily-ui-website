@@ -1,15 +1,15 @@
 {
-  "projects": {
-    "default": "hub-by-nikdelvin"
-  },
-  "targets": {
-    "hub-by-nikdelvin": {
-      "hosting": {
-        "taily-ui-website": [
-          "taily-ui-website"
-        ]
-      }
-    }
-  },
-  "etags": {}
+    "projects": {
+        "default": "hub-by-nikdelvin"
+    },
+    "targets": {
+        "hub-by-nikdelvin": {
+            "hosting": {
+                "taily-ui-website": [
+                    "taily-ui-by-nikdelvin"
+                ]
+            }
+        }
+    },
+    "etags": {}
 }
