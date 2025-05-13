@@ -1,8 +1,6 @@
 <p>
-    <a href="https://tailyui.by.nikdelv.in">
-      <img alt="Taily UI - Tailwind CSS components" width="350" src="https://tailyui.by.nikdelv.in/assets/github/logo.png">
-      <img alt="Astro.JS" width="60" src="https://astro.build/assets/press/astro-icon-light-gradient.svg">
-    </a><br>
+    <img alt="Taily UI - Tailwind CSS components" width="350" src="https://tailyui.by.nikdelv.in/assets/github/logo.png">
+    <img alt="Astro.JS" width="61" src="https://astro.build/assets/press/astro-icon-light-gradient.svg">
 </p>
 
 This repository contains the source code for the official main website/landing page for **Taily UI**, built with [Astro.js](https://astro.build/).
@@ -21,18 +19,18 @@ This repository specifically houses the code for the **landing page** that showc
 
 ## 🚀 Features of this Website
 
-* **Built with Astro:** Leverages Astro's performance benefits (fast loading, zero JS by default).
-* **Showcases Taily UI:** Demonstrates the components and features of the Taily UI library.
-* **Pure Tailwind CSS:** Adheres to the Taily UI philosophy, styled primarily with Tailwind CSS.
-* **Responsive Design:** Adapts to various screen sizes.
-* **Optimized Performance:** Fast and lightweight.
+- **Built with Astro:** Leverages Astro's performance benefits (fast loading, zero JS by default).
+- **Showcases Taily UI:** Demonstrates the components and features of the Taily UI library.
+- **Pure Tailwind CSS:** Adheres to the Taily UI philosophy, styled primarily with Tailwind CSS.
+- **Responsive Design:** Adapts to various screen sizes.
+- **Optimized Performance:** Fast and lightweight.
 
 ## 🛠️ Tech Stack
 
-* **Framework:** [Astro.js](https://astro.build/)
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **UI Components:** [Taily UI](https://www.npmjs.com/package/taily-ui)
-* **Deployment:** [Firebase Cloud Hosting](https://firebase.google.com)
+- **Framework:** [Astro.js](https://astro.build/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [Taily UI](https://www.npmjs.com/package/taily-ui)
+- **Deployment:** [Firebase Cloud Hosting](https://firebase.google.com)
 
 ## ⚙️ Getting Started & Local Development
 
@@ -89,11 +87,11 @@ To run this website locally, follow these steps:
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check issues page.   
+Contributions, issues, and feature requests are welcome! Feel free to check issues page.  
 
 1. Fork the Project
 
-2. Create your Feature Branch 
+2. Create your Feature Branch
 
     ```bash
     git checkout -b feature/AmazingFeature
@@ -105,7 +103,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check issu
     git commit -m 'Add some AmazingFeature'
     ```
 
-4. Push to the Branch 
+4. Push to the Branch
 
     ```bash
     git push origin feature/AmazingFeature
