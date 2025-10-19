@@ -1,93 +1,155 @@
-<p>
-    <img alt="Taily UI - Tailwind CSS components" width="350" src="https://tailyui.by.nikdelv.in/assets/github/logo.png">
-    <img alt="Astro.JS" width="61" src="https://astro.build/assets/press/astro-icon-light-gradient.svg">
-</p>
+# [![Taily UI - Tailwind CSS components](https://tailyui.by.nikdelv.in/assets/github/logo.png)](https://tailyui.by.nikdelv.in)
 
-This repository contains the source code for the official main website/landing page for **Taily UI**, built with [Astro.js](https://astro.build/).
+Introducing Taily UI - 🚀 Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.
 
-🔗 **Live Website:** [https://tailyui.by.nikdelv.in](https://tailyui.by.nikdelv.in)
+[![Total Downloads](https://img.shields.io/npm/dt/taily-ui.svg)](https://www.npmjs.com/package/taily-ui)
+[![Latest Release](https://img.shields.io/npm/v/taily-ui.svg)](https://github.com/nikdelvin/taily-ui/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://tailyui.nikdelvin.dev/docs/getting-started/license)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-## ✨ About Taily UI
+## Table of Contents
 
-**Taily UI** is a beautiful, fast, and modern UI Library meticulously crafted and animated entirely with pure [Tailwind CSS](https://tailwindcss.com/). It aims to provide developers with ready-to-use, highly customizable, and performant UI components.
+- Taily UI
+  - [Table of Contents](#table-of-contents)
+  - [✨ Features](#-features)
+  - [🚀 Quick Start](#-quick-start)
+  - [📋 Prerequisites](#-prerequisites)
+  - [💻 Installation](#-installation)
+    - [NPM Installation](#npm-installation)
+  - [📖 Usage](#-usage)
+    - [Data Attributes](#data-attributes)
+  - [🪄 Components](#-components)
+    - [Featured Components](#featured-components)
+  - [❓ Troubleshooting](#-troubleshooting)
+    - [Styles not showing up?](#styles-not-showing-up)
+    - [Components not working?](#components-not-working)
+  - [🤝 Contributing](#-contributing)
+    - [Getting Started](#getting-started)
+  - [📜 License](#-license)
 
-➡️ **Looking for the UI Library itself?** You can find the main Taily UI library repository [here](https://www.npmjs.com/package/taily-ui).
+## ✨ Features
 
-## 🎯 Purpose of this Repository
+- **🎨 Pure Tailwind CSS** - No extra CSS files or dependencies to load
+- **⚡ Lightweight & Fast** - Minimal bundle size with zero overhead
+- **🔧 Fully Customizable** - Use Tailwind utilities to style components
+- **📱 Responsive by Default** - Mobile-first design patterns
+- **♿ Accessible** - Built with accessibility best practices
+- **🎯 Simple Data Attributes** - Easy-to-use HTML interface
 
-This repository specifically houses the code for the **landing page** that showcases Taily UI. It demonstrates how Taily UI components can be integrated into a real-world project (built with Astro) and serves as the primary online presence for the library.
+## 🚀 Quick Start
 
-## 🚀 Features of this Website
+The fastest way to get started with Taily UI is to use the data attributes interface:
 
-- **Built with Astro:** Leverages Astro's performance benefits (fast loading, zero JS by default).
-- **Showcases Taily UI:** Demonstrates the components and features of the Taily UI library.
-- **Pure Tailwind CSS:** Adheres to the Taily UI philosophy, styled primarily with Tailwind CSS.
-- **Responsive Design:** Adapts to various screen sizes.
-- **Optimized Performance:** Fast and lightweight.
-
-## 🛠️ Tech Stack
-
-- **Framework:** [Astro.js](https://astro.build/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **UI Components:** [Taily UI](https://www.npmjs.com/package/taily-ui)
-- **Deployment:** [Firebase Cloud Hosting](https://firebase.google.com)
-
-## ⚙️ Getting Started & Local Development
-
-To run this website locally, follow these steps:
-
-1.  **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/nikdelvin/taily-ui-website
-    cd taily-ui-website
-    ```
-
-2.  **Install dependencies:**
-
-    ```bash
-    npm install
-    ```
-
-3.  **Run the development server:**
-
-    ```bash
-    npm start
-    ```
-
-    This will start a local development server, usually at `http://localhost:4321`.
-
-4.  **Build for production:**
-
-    ```bash
-    npm run build
-    ```
-
-    This command builds the static site into the `dist/` directory.
-
-## 📁 Project Structure
-
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button data-color="primary" data-type="solid" data-size="medium" class="button">
+        Start using Taily UI
+    </button>
+</body>
+</html>
 ```
-├── public/             # Static assets (images, fonts, favicons)
-├── src/
-│   ├── components/     # Reusable Astro/Taily UI components
-│   ├── icons/          # Reusable Astro Icons components
-│   ├── layouts/        # Base page layouts (e.g., BaseLayout.astro)
-│   └── pages/          # Site pages/routes (e.g., index.astro)
-├── .gitignore          # Git Ignore configuration file
-├── .prettierrc.json    # Prettier configuration file
-├── astro.config.mjs    # Astro configuration file
-├── eslint.config.mjs   # ESLint configuration file
-├── package-lock.json   # Project dependencies & scripts (lockfile)
-├── package.json        # Project dependencies & scripts
-├── postcss.config.mjs  # PostCSS configuration file
-├── tailwind.config.ts  # Tailwind CSS configuration file
-└── tsconfig.json       # TypeScript configuration file
+
+For a complete setup guide, check the [Installation](#-installation) section below.
+
+## 📋 Prerequisites
+
+Before you begin, make sure you have:
+
+- **Node.js** 14.0 or higher ([Download](https://nodejs.org/))
+- **Tailwind CSS** 3.0 or higher ([Install Guide](https://tailwindcss.com/docs/installation))
+
+## 💻 Installation
+
+Taily UI can be included as a plugin into an existing Tailwind CSS project to help you build websites faster with a set of beautiful, production-ready web components built with Tailwind CSS utilities.
+
+### NPM Installation
+
+Make sure that you have [Node.js](https://nodejs.org/en/) and [Tailwind CSS](https://tailwindcss.com/) installed first.
+
+1. Install Taily UI as a dependency:
+
+    ```bash
+    npm install taily-ui
+    ```
+
+2. Add Taily UI as a plugin in your `tailwind.config.js`:
+
+    ```javascript
+    const { tailyUI } = require('taily-ui')
+
+    module.exports = {
+        plugins: [tailyUI]
+    }
+    ```
+
+3. Or if you use TypeScript, add it to your `tailwind.config.ts`:
+
+    ```typescript
+    import type { Config } from 'tailwindcss'
+    import { tailyUI } from 'taily-ui'
+
+    const config: Config = {
+        plugins: [tailyUI]
+    }
+    export default config
+    ```
+
+## 📖 Usage
+
+### Data Attributes
+
+The preferred way to use Taily UI components is via the data attributes interface. This allows you to configure components directly in your HTML using simple attributes:
+
+```html
+<button data-color="primary" data-type="solid" data-size="medium" class="button">
+    Start using Taily UI
+</button>
 ```
+
+Available attributes include:
+
+- `data-color` - Set the button color (primary, secondary, default, etc.)
+- `data-type` - Choose the button type (solid, outline, ghost, etc.)
+- `data-size` - Define the button size (small, medium, large, etc.)
+
+## 🪄 Components
+
+Taily UI is an open source collection of 50+ UI components built with the utility classes from Tailwind CSS that you can use as a starting point when coding user interfaces and websites. Each component is production-ready, fully customizable, and accessible.
+
+### Featured Components
+
+| Button | Button Group | Card |
+| --- | --- | --- |
+| [![Tailwind CSS Button](https://tailyui.by.nikdelv.in/assets/github/button.png)](https://tailyui.by.nikdelv.in/docs/components/buttons) | [![Tailwind CSS Button Group](https://tailyui.by.nikdelv.in/assets/github/button-group.png)](https://tailyui.by.nikdelv.in/docs/components/button-groups) | [![Tailwind CSS Card](https://tailyui.by.nikdelv.in/assets/github/card.png)](https://tailyui.by.nikdelv.in/docs/components/cards) |
+
+[View all components →](https://tailyui.by.nikdelv.in/docs/components)
+
+## ❓ Troubleshooting
+
+### Styles not showing up?
+
+Make sure Taily UI is correctly installed as a plugin in your `tailwind.config.js` or `tailwind.config.ts` file. The plugin needs to be included in the `plugins` array for styles to be generated.
+
+### Components not working?
+
+Ensure that:
+
+- Tailwind CSS version 3.0 or higher is installed
+- You've included the Taily UI plugin in your Tailwind config
+- You're using the correct data attributes
+
+For more help, check the [documentation](https://tailyui.by.nikdelv.in/docs) or open an issue on GitHub.
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check issues page.  
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/nikdelvin/taily-ui/issues).
+
+### Getting Started
 
 1. Fork the Project
 
@@ -113,6 +175,4 @@ Contributions, issues, and feature requests are welcome! Feel free to check issu
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-✨ Thank you for checking out the Taily UI website repository!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
